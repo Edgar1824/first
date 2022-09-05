@@ -1,0 +1,1023 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="sayt.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Bebas+Neue&family=Belgrano&family=Inria+Sans&family=Koulen&family=Lobster&family=Raleway:wght@100&family=Share+Tech&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <style></style>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <section class="flex">
+        <img
+          style="cursor: pointer"
+          onclick="scrollTopAnimated()"
+          id="logo"
+          src="Logo-01.png"
+          alt=""
+        />
+
+        <div id="nav-menu" class="navbar">
+          <ul style="list-style-type: none; float: left">
+            <li onclick="scrollTopAnimated1()" class="li1">home</li>
+
+            <li onclick="scrollTopAnimated2()" class="li1">about</li>
+
+            <li onclick="scrollTopAnimated3()" class="li1">menu</li>
+
+            <li onclick="scrollTopAnimated4()" class="li1">order</li>
+
+            <li onclick="scrollTopAnimated5()" class="li1">faq</li>
+          </ul>
+        </div>
+
+        <div class="icons" style="display: flex">
+          <div onclick="menu()" id="btn-menu" class="fas fa-bars"></div>
+          <div onclick="open1()" id="btn-user" class="fas fa-user"></div>
+          <div onclick="open2()" id="btn-order" class="fas fa-box"></div>
+          <div onclick="open3()" id="btn-cart" class="fas fa-shopping-cart">
+            <span style="font-size: 17px">(4)</span>
+          </div>
+        </div>
+      </section>
+    </header>
+    <div id="nav-menu-hidden">
+      <ul style="list-style-type: none">
+        <li class="li2">
+          <a href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#home"
+            >home</a
+          >
+        </li>
+        <li class="li2">
+          <a href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#about"
+            >about</a
+          >
+        </li>
+        <li class="li2">
+          <a href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#menu"
+            >menu</a
+          >
+        </li>
+        <li class="li2">
+          <a href="file:///E:/Removable%20Disk/js/js9/js-sayt/sayt.html#order"
+            >order</a
+          >
+        </li>
+        <li class="li2">
+          <a href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#faq"
+            >faq</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- REGISTRATION -->
+
+    <div id="register">
+      <a id="back">close</a>
+
+      <div id="reg-cont">
+        <p
+          style="
+            margin: 0;
+            color: #b91515;
+            width: 100%;
+            text-align: center;
+            font-size: 21px;
+            background: #dbdbdb4f;
+            padding: 13px;
+            border-radius: 6px;
+          "
+        >
+          you are not logged in now!
+        </p>
+
+        <div
+          style="
+            height: 72%;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+          "
+        >
+          <div
+            style="
+              border-radius: 5px;
+              padding: 26px;
+              display: flex;
+              width: 50%;
+              margin: 20px 10px 0 0;
+              background: #dbdbdb4f;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <div class="reg-box">
+              <p style="font-size: 30px; font-weight: 700">LOGIN NOW</p>
+              <div>
+                <input
+                  class="inp3"
+                  placeholder="enter your email"
+                  type="text"
+                  maxlength="35"
+                  name=""
+                />
+                <input class="inp3" placeholder="enter your password"
+                type="text" maxlength="35" name="" ">
+              </div>
+            </div>
+            <button
+              style="background: #b91515; color: white; width: 100%"
+              class="btn"
+            >
+              LOGIN NOW
+            </button>
+          </div>
+          <div
+            style="
+              border-radius: 5px;
+              padding: 26px;
+              display: flex;
+              width: 50%;
+              margin: 20px 0 0 10px;
+              background: #dbdbdb4f;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+          >
+            <div class="reg-box">
+              <p style="font-size: 30px; font-weight: 700">REGISTER NOW</p>
+              <div>
+                <input
+                  class="inp3"
+                  placeholder="enter your name"
+                  type="text"
+                  maxlength="35"
+                  name=""
+                />
+                <input
+                  class="inp3"
+                  placeholder="enter your email"
+                  type="text"
+                  maxlength="35"
+                  name=""
+                />
+                <input
+                  class="inp3"
+                  placeholder="enter your password"
+                  type="text"
+                  maxlength="35"
+                  name=""
+                />
+                <input
+                  class="inp3"
+                  placeholder="confirm your password"
+                  type="text"
+                  maxlength="35"
+                  name=""
+                />
+              </div>
+            </div>
+            <button
+              style="background: #b91515; color: white; width: 100%"
+              class="btn"
+            >
+              REGISTER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REGISTRATION_ end -->
+
+    <!-- ORDER-BAR -->
+
+    <div id="order-bar">
+      <a onclick="close2()" id="back1">close</a>
+
+      <div id="order-bar-cont">
+        <p
+          style="
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 34px;
+            padding: 13px;
+            font-weight: bold;
+            border-radius: 6px;
+          "
+        >
+          My Orders
+        </p>
+
+        <div class="orders">
+          <p>
+            placed on :
+            <span class="Ptext">06/04/2022</span>
+          </p>
+          <p>
+            name :
+            <span class="Ptext">shaikh anas</span>
+          </p>
+          <p>
+            number :
+            <span class="Ptext">1234567890</span>
+          </p>
+          <p>
+            address :
+            <span class="Ptext"
+              >flat no. 123, bulding no. 2, jogeshwari, mumbai, india -
+              400104</span
+            >
+          </p>
+          <p>
+            payment method :
+            <span class="Ptext">cash on delivery</span>
+          </p>
+          <p>
+            your orders :
+            <span class="Ptext">chicco xaxaliq</span>
+          </p>
+          <p>
+            total price :
+            <span class="Ptext">$20/-</span>
+          </p>
+          <p>
+            payment status :
+            <span class="Ptext" style="color: red">pending</span>
+          </p>
+
+          <button
+            name="0"
+            id="modal"
+            type="button"
+            class="btn qr_p"
+            data-bs-toggle="modal"
+            data-bs-target=".bd-example-modal-lg"
+          >
+            Click to see QR
+          </button>
+        </div>
+        <div class="orders">
+          <p>
+            placed on :
+            <span class="Ptext1">06/04/2022</span>
+          </p>
+          <p>
+            name :
+            <span class="Ptext1">shaikh anas</span>
+          </p>
+          <p>
+            number :
+            <span class="Ptext1">1234567890</span>
+          </p>
+          <p>
+            address :
+            <span class="Ptext1"
+              >flat no. 123, bulding no. 2, jogeshwari, mumbai, india -
+              400104</span
+            >
+          </p>
+          <p>
+            payment method :
+            <span class="Ptext1">cash on delivery</span>
+          </p>
+          <p>
+            your orders :
+            <span class="Ptext1">chicco xaxaliq</span>
+          </p>
+          <p>
+            total price :
+            <span class="Ptext1">$11/-</span>
+          </p>
+          <p>
+            payment status :
+            <span class="Ptext1" style="color: red">pending</span>
+          </p>
+          <button
+            name="1"
+            id="modal"
+            type="button"
+            class="btn qr_p"
+            data-bs-toggle="modal"
+            data-bs-target=".bd-example-modal-lg"
+          >
+            Click to see QR
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ORDER-BAR_ end -->
+
+    <!-- SHOP -->
+
+    <div id="shop-bar">
+      <a onclick="close3()" id="back2">close</a>
+
+      <div id="shop-bar-cont">
+        <div class="shop-box">
+          <img class="shop-img" src="pizza-1.jpg" alt="" />
+          <div>
+            <p>
+              chicco
+              <span>( $3/- x 2 )</span>
+            </p>
+            <div>
+              <input type="number" value="2" max="100" min="1" />
+              <a
+                onclick="close3()"
+                href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#order"
+                ><button class="fas fa-edit"></button
+              ></a>
+            </div>
+          </div>
+          <a
+            onclick="close3()"
+            href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#home"
+            ><i style="color: #b91515; font-size: 18px" class="fas fa-times"></i
+          ></a>
+        </div>
+        <div class="shop-box">
+          <img class="shop-img" src="pizza-2.jpg" alt="" />
+          <div>
+            <p>
+              chicco
+              <span>( $2/- x 1 )</span>
+            </p>
+            <div>
+              <input type="number" value="1" max="100" min="1" />
+              <a
+                onclick="close3()"
+                href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#order"
+                ><button class="fas fa-edit"></button
+              ></a>
+            </div>
+          </div>
+          <a
+            onclick="close3()"
+            href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#home"
+            ><i style="color: #b91515; font-size: 18px" class="fas fa-times"></i
+          ></a>
+        </div>
+        <div class="shop-box">
+          <img class="shop-img" src="pizza-3.jpg" alt="" />
+          <div>
+            <p>
+              chicco
+              <span>( $4/- x 2 )</span>
+            </p>
+            <div>
+              <input type="number" value="2" max="100" min="1" />
+              <a
+                onclick="close3()"
+                href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#order"
+                ><button class="fas fa-edit"></button
+              ></a>
+            </div>
+          </div>
+          <a
+            onclick="close3()"
+            href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#home"
+            ><i style="color: #b91515; font-size: 18px" class="fas fa-times"></i
+          ></a>
+        </div>
+
+        <a
+          onclick="close3()"
+          class="btn"
+          style="
+            width: 87%;
+            color: white;
+            font-size: 21px;
+            background-color: #b91515;
+            text-decoration: none;
+            color: white;
+          "
+          href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#order"
+        >
+          Order Now</a
+        >
+      </div>
+    </div>
+
+    <!-- SHOP_ end -->
+
+    <div id="home">
+      <div id="nkar">
+        <img id="nk1" src="home-img-1.png" alt="" />
+      </div>
+
+      <div id="text1">
+        <p id="p1">Choose Your Favorite Flowers</p>
+        <div>
+          <div id="prev" onclick="prev()" class="fas fa-angle-left bnt1"></div>
+          <div id="next" onclick="next()" class="fas fa-angle-right bnt1"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" style="background-color: f1f1f1">
+      <h1 style="text-align: center; margin-bottom: 30px; font-size: 55px">
+        ABOUT US
+      </h1>
+
+      <div id="info">
+        <div id="info1">
+          <img src="about-1.png" alt="" />
+          <h3>made with love</h3>
+          <p style="color: grey">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae
+            amet beatae magni numquam facere sit. Tempora vel laboriosam
+            repudiandae!
+          </p>
+          <a
+            href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#menu"
+            class="btn"
+            >Our Menu</a
+          >
+        </div>
+        <div id="info2">
+          <img src="about-2.svg" alt="" />
+          <h3>3 minutes delivery</h3>
+          <p style="color: grey">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae
+            amet beatae magni numquam facere sit. Tempora vel laboriosam
+            repudiandae!
+          </p>
+          <a
+            href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#menu"
+            class="btn"
+            >Our Menu</a
+          >
+        </div>
+        <div id="info3">
+          <img src="about-3.png" alt="" />
+          <h3>share with friends</h3>
+          <p style="color: grey">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum quae
+            amet beatae magni numquam facere sit. Tempora vel laboriosam
+            repudiandae!
+          </p>
+          <a
+            href="file:///C:/Users/User/Desktop/js_sayt.html/js100.html#menu"
+            class="btn"
+            >Our Menu</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div id="menu">
+      <h1 style="text-align: center; margin-bottom: 30px; font-size: 55px">
+        OUR MENU
+      </h1>
+
+      <div id="menu-bar">
+        <div id="box1">
+          <img src="pizza-1.jpg" alt="" />
+          <h4>xaxaliq-1</h4>
+          <div
+            style="
+              padding-top: 10px;
+              display: flex;
+              gap: 10px;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              style="font-size: 130%; padding: 10px; width: 71px; height: 100%"
+            />
+            <a class="btn" href="">Our Menu</a>
+          </div>
+        </div>
+        <div id="box2">
+          <img src="pizza-2.jpg" alt="" />
+          <h4>xaxaliq-2</h4>
+          <div
+            style="
+              padding-top: 10px;
+              display: flex;
+              gap: 10px;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              style="font-size: 130%; padding: 10px; width: 71px; height: 100%"
+            />
+            <a href="" class="btn">Our Menu</a>
+          </div>
+        </div>
+        <div id="box3">
+          <img src="pizza-3.jpg" alt="" />
+          <h4>xaxaliq-3</h4>
+
+          <div
+            style="
+              padding-top: 10px;
+              display: flex;
+              gap: 10px;
+              flex-direction: row;
+              align-items: center;
+            "
+          >
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              style="font-size: 130%; padding: 10px; width: 71px; height: 100%"
+            />
+            <a href="" class="btn">Our Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="order">
+      <h1 style="text-align: center; margin-bottom: 30px; font-size: 55px">
+        ORDER NOW
+      </h1>
+
+      <div id="order-cont1">
+        <div id="order-cont2" class="container">
+          <div class="order-cont3">
+            <div class="order-box">
+              <p style="margin-bottom: 5px">your name :</p>
+              <input
+                placeholder="enter your name"
+                type="text"
+                maxlength="20"
+                minlength="1"
+                style="
+                  border-radius: 4px;
+                  padding: 17px;
+                  border: none;
+                  width: 100%;
+                  height: 55px;
+                  background: #0000000d;
+                "
+              />
+            </div>
+            <div class="order-box">
+              <p style="margin-bottom: 5px">payment method :</p>
+              <select
+                style="
+                  color: gray;
+                  border-radius: 4px;
+                  padding: 10px;
+                  border: none;
+                  width: 100%;
+                  height: 55px;
+                  background: #0000000d;
+                "
+              >
+                <option value="">cash on delivery</option>
+                <option value="">credit card</option>
+                <option value="">paytm</option>
+                <option value="">paypal</option>
+              </select>
+            </div>
+            <div class="order-box">
+              <p style="margin-bottom: 5px">address line 02 :</p>
+              <input
+                placeholder="e.g. street name."
+                type="text"
+                maxlength="20"
+                minlength="1"
+                style="
+                  border-radius: 4px;
+                  padding: 17px;
+                  border: none;
+                  width: 100%;
+                  height: 55px;
+                  background: #0000000d;
+                "
+              />
+            </div>
+          </div>
+
+          <div class="order-cont3">
+            <div class="order-box">
+              <p style="margin-bottom: 5px">your number :</p>
+              <input
+                placeholder="enter your number"
+                type="text"
+                maxlength="20"
+                minlength="1"
+                style="
+                  border-radius: 4px;
+                  padding: 17px;
+                  border: none;
+                  width: 100%;
+                  height: 55px;
+                  background: #0000000d;
+                "
+              />
+            </div>
+            <div class="order-box">
+              <p style="margin-bottom: 5px">address line 01 :</p>
+              <input
+                placeholder="e.g. flat no."
+                type="text"
+                maxlength="20"
+                minlength="1"
+                style="
+                  border-radius: 4px;
+                  padding: 17px;
+                  border: none;
+                  width: 100%;
+                  height: 55px;
+                  background: #0000000d;
+                "
+              />
+            </div>
+            <div class="order-box">
+              <p style="margin-bottom: 5px">pin code :</p>
+              <input
+                placeholder="e.g. 123456"
+                type="text"
+                maxlength="20"
+                minlength="1"
+                style="
+                  border-radius: 4px;
+                  padding: 17px;
+                  border: none;
+                  width: 100%;
+                  height: 55px;
+                  background: #0000000d;
+                "
+              />
+            </div>
+          </div>
+        </div>
+        <input id="order-btn" type="submit" value="Order Now" class="btn" />
+      </div>
+    </div>
+
+    <div id="faq">
+      <h1 style="text-align: center; margin-bottom: 30px; font-size: 55px">
+        FAQ
+      </h1>
+
+      <div id="faq-cont">
+        <div name="0" class="faq-box">
+          <div class="faq-box-header">
+            <span class="span1">how does it work?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p
+            class="faq-box-text"
+            class="faq-text"
+            style="
+              line-height: 2;
+              padding: 20px;
+              margin: 0;
+              display: block;
+              background: white;
+              color: #6a6a6a;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            quas. Quidem minima veniam accusantium maxime, doloremque iusto
+            deleniti veritatis quos.
+          </p>
+        </div>
+        <div name="1" class="faq-box">
+          <div class="faq-box-header">
+            <span class="span1">how long does it take for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p
+            class="faq-box-text"
+            class="faq-text"
+            style="
+              line-height: 2;
+              padding: 20px;
+              margin: 0;
+              display: none;
+              background: white;
+              color: #6a6a6a;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            quas. Quidem minima veniam accusantium maxime, doloremque iusto
+            deleniti veritatis quos.
+          </p>
+        </div>
+        <div name="2" class="faq-box">
+          <div class="faq-box-header">
+            <span class="span1">can I order for huge parties?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p
+            class="faq-box-text"
+            class="faq-text"
+            style="
+              line-height: 2;
+              padding: 20px;
+              margin: 0;
+              display: none;
+              background: white;
+              color: #6a6a6a;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            quas. Quidem minima veniam accusantium maxime, doloremque iusto
+            deleniti veritatis quos.
+          </p>
+        </div>
+        <div name="3" class="faq-box">
+          <div class="faq-box-header">
+            <span class="span1">how much protein it contains?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p
+            class="faq-box-text"
+            class="faq-text"
+            style="
+              line-height: 2;
+              padding: 20px;
+              margin: 0;
+              display: none;
+              background: white;
+              color: #6a6a6a;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            quas. Quidem minima veniam accusantium maxime, doloremque iusto
+            deleniti veritatis quos.
+          </p>
+        </div>
+        <div name="4" class="faq-box">
+          <div class="faq-box-header">
+            <span class="span1">is it cooked with oil?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p
+            class="faq-box-text"
+            class="faq-text"
+            style="
+              line-height: 2;
+              padding: 20px;
+              margin: 0;
+              display: none;
+              background: white;
+              color: #6a6a6a;
+            "
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            quas. Quidem minima veniam accusantium maxime, doloremque iusto
+            deleniti veritatis quos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div
+        id="footer-cont"
+        style="
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          gap: 20px;
+        "
+      >
+        <div
+          style="
+            box-shadow: 0 0px 12px #d7c1c1;
+            width: 275px;
+            border-radius: 7px;
+            background: white;
+            text-align: center;
+            padding: 20px;
+          "
+        >
+          <!-- <i class="fas fa-phone" style="margin: 10px; font-size: 20px; color:white; padding: 20px; border-radius: 100px; background:#b91515 ;"></i>-->
+          <a href="https://web.telegram.org/k/">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/2048px-Telegram_logo.svg.png"
+              alt=""
+            />
+          </a>
+          <h5 style="font-weight: bolder; margin-bottom: 13px">Telegram</h5>
+          <p style="margin: 10px; letter-spacing: 2px">+123-456-7890</p>
+          <p style="margin: 10px; letter-spacing: 2px">+111-111-1111</p>
+        </div>
+        <div
+          style="
+            box-shadow: 0 0px 12px #d7c1c1;
+            width: 275px;
+            border-radius: 7px;
+            background: white;
+            text-align: center;
+            padding: 20px;
+          "
+        >
+          <!-- <i class="fas fa-phone" style="margin: 10px; font-size: 20px; color:white; padding: 20px; border-radius: 100px; background:#b91515 ;"></i>-->
+          <a
+            href="https://www.google.com/maps/place/40%C2%B011'26.3%22N+44%C2%B031'01.1%22E/@40.1906389,44.5169722,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0xeb174d046872b882!7e2!8m2!3d40.1906345!4d44.5169705"
+          >
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+            />
+          </a>
+          <h5 style="font-weight: bolder; margin-bottom: 13px">Our Address</h5>
+          <p style="margin: 10px; letter-spacing: 2px">
+            Մ. Մաշտոց պող. Սարմենի 1, Երևան, Հայաստան
+          </p>
+        </div>
+        <div
+          style="
+            box-shadow: 0 0px 12px #d7c1c1;
+            width: 275px;
+            border-radius: 7px;
+            background: white;
+            text-align: center;
+            padding: 20px;
+          "
+        >
+          <i
+            class="fas fa-phone"
+            style="
+              margin: 10px;
+              font-size: 20px;
+              color: white;
+              padding: 20px;
+              border-radius: 100px;
+              background: #b91515;
+            "
+          ></i>
+          <h5 style="font-weight: bolder; margin-bottom: 13px">
+            Opening Hours
+          </h5>
+          <p style="margin: 10px; letter-spacing: 2px">00:09am to 00:10pm</p>
+        </div>
+        <div
+          style="
+            box-shadow: 0 0px 12px #d7c1c1;
+            width: 275px;
+            border-radius: 7px;
+            background: white;
+            text-align: center;
+            padding: 20px;
+          "
+        >
+          <!-- <i class="fas fa-phone" style="margin: 10px; font-size: 20px; color:white; padding: 20px; border-radius: 100px; background:#b91515 ;"></i> -->
+          <a href="https://mail.ru/">
+            <img
+              src="https://seeklogo.com/images/G/gmail-icon-logo-9ADB17D3F3-seeklogo.com.png"
+              alt=""
+            />
+          </a>
+          <h5 style="font-weight: bolder; margin-bottom: 13px">
+            Email Address
+          </h5>
+          <p style="margin: 10px; letter-spacing: 2px; font-size: 70%">
+            edgaravetisyan932@gmail.com
+          </p>
+          <p style="margin: 10px; letter-spacing: 2px; font-size: 70%">
+            edgar.avetisyan.2004@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div
+        id="verjaket"
+        style="
+          text-align: center;
+          font-size: 22px;
+          border-top: 1px solid #000;
+          padding-top: 35px;
+          margin: 30px 0 0 0;
+        "
+      >
+        © copyright @ 2022 by for nver.am | all rights reserved!
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade bd-example-modal-lg"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Your Order</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div
+            id="modalBody"
+            style="display: flex; flex-direction: row"
+            class="modal-body"
+          >
+            <div id="modalBodyText"></div>
+            <img
+              style="width: 300px; height: 300px"
+              src="https://www.kaspersky.ru/content/ru-ru/images/repository/isc/2020/9910/a-guide-to-qr-codes-and-how-to-scan-qr-codes-2.png"
+              alt=""
+            />
+          </div>
+          <div class="modal-footer">
+            <button
+              style="background: #b91515; color: white"
+              type="button"
+              class="btn"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="site.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      function scrollTopAnimated() {
+        $("html, body").animate({ scrollTop: "0" });
+      }
+      function scrollTopAnimated1() {
+        $("html, body").animate({ scrollTop: "0" });
+      }
+      // function scrollTopAnimated2() {
+      //     $("html, body").animate({ scrollTop: "420" });
+      // }
+      // function scrollTopAnimated3() {
+      //     $("html, body").animate({ scrollTop: "1150" });
+      // }
+      // function scrollTopAnimated4() {
+      //     $("html, body").animate({ scrollTop: "1500" });
+      // }
+      // function scrollTopAnimated5() {
+      //     $("html, body").animate({ scrollTop: "2000" });
+      // }
+    </script>
+  </body>
+</html>
